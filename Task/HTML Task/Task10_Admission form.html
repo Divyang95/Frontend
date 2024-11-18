@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        form{
+            border: 2px solid;
+            padding: 25px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        span{
+            color: red;
+        }
+
+        .belowname{
+            font-size: small;
+        }
+        p{
+            padding-bottom: 20px;
+        }
+        hr{
+            border: 2px solid;
+            margin-bottom: 20px;
+        }
+        
+        td,th {
+            padding: 5px 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <table>
+            <caption>
+                <h1 align="left">Admission Form</h1>
+                <p align="left">Enter your admission information below</p>
+                <hr>
+            </caption>
+            <tr>
+                <th align="left" style="padding-bottom: 10px;"><label for="">Name</label> <span>*</span></th>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="" class="belowname">Firstname</label></td>
+                <td><label for="" class="belowname">Middlename</label></td>
+                <td><label for="" class="belowname">Lastname</label></td>
+            </tr> 
+            <tr>
+                <th align="left" style="padding-top: 20px;"><label for="">BirthDate</label> <span>*</span></th>
+                <td style="padding-top: 10px;"><input type="date"></td>
+            </tr>
+            <tr>
+                <th align="left" style="padding: 10px 0;"><label for="">Gender</label><span>*</span></th>
+            </tr>
+            <tr><td><input type="radio">Male</td></tr>
+            <tr><td><input type="radio">Female </tr></td>
+            <tr> <td> <input type="radio">Decline to Answer </td> </tr>
+                
+            
+            <tr>
+                <th style="padding-top: 20px;"><label for="">Are you hispanic or Latino ? <span>*</span></label></th>
+
+            </tr>
+            <tr><td><input type="radio">No</td></tr>
+            <tr><td><input type="radio">yes</td></tr>
+            <tr><td><input type="radio">Decline Answer</td></tr>
+            
+
+        </table>
+    </form>
+    
+</body>
+</html>

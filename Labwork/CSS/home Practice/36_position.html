@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            height: 1000px;
+            background-color: orange;
+            border: 5px solid gray;
+            display: flex;
+        
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+        
+        }
+
+        #box1{
+            position: static;
+            top: 100px;
+            left: 100px;
+        }
+
+        #box2{
+            position: fixed;
+            right: 200px;
+            bottom: 200px;
+            left: 0;
+        }
+
+        #box3{
+            position: sticky;
+            top: 50px;
+            left: 500px;
+        }
+
+        #box4{
+            position: relative;
+            top: 40px;
+            left: 50px;
+
+        }
+
+        #box5{
+            position: relative;
+            top: 30%;
+            left: 25%;
+        }
+
+        .box1{
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            background-color: aqua;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <!-- css position -->
+    <!-- there are 5 types of css position -->
+     <!-- 1.static(default) :- top,left,botton,right(px,%)
+     2.fixed(body) (does not occupy its own space) :- top, left,bottom,right(px,%)
+     3.sticky(section)(it is for particular section) :- top,left,bottom,rightt(px,%)
+     4.relative(parent)(absolute works according to relative as its parent if relative not given then absolute considers body as parent): top,left,bottom,right(px,%)
+     5.Absolute(child)(it works according to relative its parent must be relative) : top, left, bottom, right(px,%) -->
+     <section>
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">
+            <div class="box1">5</div>
+
+        </div>
+        <div class="box" id="box6">6</div>
+     </section>
+
+     <section></section>
+     <section></section>
+
+    
+</body>
+</html>

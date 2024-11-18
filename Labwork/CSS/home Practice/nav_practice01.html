@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            background-color: aqua;
+            padding: 10px 20px;
+            display: inline-block;
+            position: relative;
+        }
+
+        li::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            height: 5px;
+            width: 0%;
+            background-color: black;
+            transition: 1s;
+        }
+
+        li::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            height: 5px;
+            width: 0%;
+            background-color: black;
+            transition: 1s;
+            z-index: 1;
+        }
+
+        li:hover::before{
+            width: 50%;
+        }
+
+        li:hover::after{
+            width: -50%;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Help</li>
+        <li>Pages</li>
+    </ul>
+
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model with before after</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            height: 400px;
+            width: 400px;
+            background: url('https://jaipurethnic.com/wp-content/uploads/2022/10/Best-Kurti-Shop-in-MG-Road-Market-Pune-Maharastra-5-1024x768.jpg');
+            background-size: cover;
+            margin: 100px auto;
+            transition: 1s;
+            position: relative;
+            border: 2px solid;
+            overflow: hidden;
+        }
+
+        main::after{
+            content: "";
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            bottom: 100%;
+            left: 100%;
+            border: 2px solid;
+            transition: 2s;
+            background-color: lightgray;
+            opacity: 0.3;
+        }
+
+        main::before{
+            content: "";
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            transition: 2s;
+            top: 100%;
+            right: 100%;
+            border: 2px solid;
+            background-color: lightgray;
+            opacity: 0.3;
+        }
+
+        main:hover::after{
+            left: 0;
+            bottom: 0;
+
+
+        }
+
+        main:hover::before{
+            top: 0;
+            right: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <!--1) transition not working in main we have to do it in after and before div why ? -->
+        <!-- 1:Answer : transition should be on its parent not on hover so here main::after and main::before both are div so we have to apply transition on that divs
+        not on the hover or not on main. -->
+        <!--2) html 1.5 rowspan how to do it ?  -->
+
+        <!--3) in navbar before when we hover width -50% not working why ? -->
+        <!-- width never be in negative we can transform translate -50% like wise but not on width in negative its zero width so remember it -->
+        <!-- for both side we can use scale first its 0 scalex and then it goes to 100% from center -->
+
+
+    </main>
+    
+</body>
+</html>

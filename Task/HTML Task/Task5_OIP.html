@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body{
+            background-color: lightblue;
+            padding-top: 50px;
+        }
+
+        #country-code{
+            display: inline;
+            width:10%;
+        }
+        td {
+            padding: 8px;
+        }
+
+        textarea{
+            width:300%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <table>
+            <tr>
+                <td><label for="">Firstname:</label></td>
+                <td><input type="text" placeholder="Enter your Firstname"></td>
+            </tr>
+            <tr>
+                <td><label for="">Middlename</label></td>
+                <td><input type="text" placeholder="Middlename"></td>
+            </tr>
+            <tr>
+                <td><label for="">Lastname</label></td>
+                <td><input type="text" placeholder="Lastname"></td>
+            </tr>
+            <tr>
+                <td><label for="">Course:</label></td>
+                <td>
+                    <select name="" id="">
+                        <option hidden>--Course</option>
+                        <option>Python</option>
+                        <option>React</option>
+                        <option>Node.js</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Gender:</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio"> Male</td>
+
+            </tr>
+            <tr>
+                <td><input type="radio"> Female</td>
+            </tr>
+            <tr>
+                <td><input type="radio"> Others</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Phone:</label>
+                </td>
+                <td>
+                    <input type="text" id="country-code" name="country-code" placeholder="+91" required>
+                    <input type="text" id="phone" name="phone" placeholder="phone number" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea name="" id=""></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Email:</label>
+                    <input type="email" placeholder="Enter your Email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Password</label>
+                    <input type="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Re-type Password :</label>
+                    <input type="password">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button>Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form> 
+
+    
+</body>
+</html>

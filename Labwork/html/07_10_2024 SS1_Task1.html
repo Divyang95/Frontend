@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Insurance Quote Form</title>
+</head>
+<body>
+    <table border="5" align="center">
+        <caption>Auto Insurance Quote Form</caption>
+        <tr>
+            <td>
+                <input type="text" placeholder="Name" required>
+            </td>
+            <td>
+                <input type="date">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="email" placeholder="Email" pattern="[A-Z0-9.]+@+[a-z]+.+[a-z]{2,3}$" required>
+            </td>
+            <td>
+                <input type="text" pattern="[0-9]{10}" maxlength="10" placeholder="Enter Your Number" required>
+            </td>
+        </tr>
+        <tr>
+            <td  colspan="2" rowspan="2" height="200px ">
+                <input type="textarea" placeholder="Enter Your Address" size="100%">
+            </td>
+            
+        </tr>
+        <tr></tr>
+        <tr>
+            <td>
+                <select name="city" >
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Surat">Ahmedabad</option>
+                    <option value="Rajkot">Ahmedabad</option>
+                </select>
+            
+
+            
+                <select name="State" id="">
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                </select>
+            </td>
+        </tr>
+
+        
+    </table>
+    
+</body>
+</html>

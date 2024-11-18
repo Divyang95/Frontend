@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li::first-letter {
+            background-color: blue;
+        }
+
+        ul li::marker{
+            color: brown;
+        }
+
+        div::first-line{
+            background-color: aqua;
+        }
+
+        div::selection{
+            background-color: lightcoral;
+            color: white;
+        }
+
+        ul li::before{
+            content: 'TSA before content class element ::before ';
+            height: 200px;
+            width: 200px;
+        }
+
+        ul li::after{
+            content:'after content class element ::after'
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>One</li>
+        <li>One</li>
+        <li>One</li>
+        <li>One</li>
+        <li>One</li>
+        <li>One</li>
+        <li>One</li>
+        <li>One</li>
+    </ul>
+
+    <div>
+        Lorem ipsum dolor,sit amet consectetur adipisicing elit. Rerum magni esse autem quaerat, repudiandae animi vitae, 
+        inventore fuga perferendis delectus minima sequi. Voluptatum amet velit cumque repellat ex laboriosam distinctio!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta quis natus officia eum. 
+        Dolores iure eaque nihil aspernatur ad quos similique, tempore magni incidunt saepe commodi ipsum unde rem!
+    </div>
+    
+</body>
+</html>

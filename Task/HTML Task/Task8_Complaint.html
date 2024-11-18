@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaints</title>
+    <style>
+        body{
+            border: dotted*4;
+        }
+        span{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <table align="center" cellpadding="5">
+            <caption>
+                <h1>Complaints</h1>
+                <h3>Help us to improve our service</h3>
+                <hr style="width: 100%; margin: auto; ">
+                <hr style="width: 100%; margin: auto; height: 5px; background-color: black;  ">
+            </caption>
+            <tr>
+                <td><label for="">Fullname <span>*</span></label></td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><input type="text" placeholder="Firstname" required></td>
+                            <td><input type="text" placeholder="Lastname" required></td>
+                        </tr>
+                        <tr>
+                            <td>First</td>
+                            <td>Last</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Email</label> <span>*</span></td>
+                <td><input type="Email" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Phone</label></td>
+                <td><input type="text" style="width: 200px;"></td>
+            </tr>
+
+            <tr>
+                <td><label for="">Where did we go wrong?</label><span>*</span></td>
+                <td><textarea name="" id="" rows="4" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" style="background-color: #ff4b4b; color: white; padding: 10px 20px; border:none; cursor: pointer;" ></td>
+            </tr>
+
+
+        </table>
+    </form>
+    
+</body>
+</html>

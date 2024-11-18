@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        form{
+            padding: 20px 20px;
+            border: 2px solid;
+
+        }
+
+        table{
+            width: 300px;
+            padding: 10px;
+            margin: auto;
+            justify-content: center;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="">
+            <fieldset>
+                <legend>Customer</legend>
+                <table>
+                    <tr>
+                        <td><label for="">Name</label><span>*</span></td>
+                        <td><input type="text" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Email</label><span>*</span></td>
+                        <td><input type="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Investment</label></td>
+                        <td>
+                            <select name="" id="">
+                                <option value="" selected>select an option</option>
+                                <option value="">stocks</option>
+                                <option value="">bonds</option>
+                                <option value="">real estate</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Datejoined <span>*</span></td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Active</label></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit">ok</button>
+                            <button type="reset">cancel</button>
+                        </td>
+                    </tr>
+                </table>
+
+
+            </fieldset>
+    </form>
+    
+</body>
+</html>

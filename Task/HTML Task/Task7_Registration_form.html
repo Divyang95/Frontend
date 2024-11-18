@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration form using table in HTML</title>
+    <style>
+        body{
+            background-image: linear-gradient(lightblue,lightpink);
+            background-repeat: no-repeat;
+        }
+
+        th,td {
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="">
+        <table cellpadding="5" cellspacing="5">
+            <tr>
+                <th><label for="">First Name</label></th>
+                <td><input type="text" placeholder="Ghanendra" maxlength="50"></td>
+                <th>(Max 50 Characters Allowed)</th>
+            </tr>
+            <tr>
+                <th><label for="">Last Name</label></th>
+                <td><input type="text" placeholder="Yadav" maxlength="50"></td>
+                <th>(Max 50 Characters Allowed)</th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="">Email ID</label>
+                </th>
+                <td>
+                    <input type="email" placeholder="yghanendra@gmail.com">
+                </td>                
+            </tr>
+            <tr>
+                <th><label for="">Mobile Number</label></th>
+                <td><input type="number" placeholder="7842xxxxxx" pattern="[0,9]{10}"></td> 
+                <!-- here above [0,9] means 0 to 9 any digit we can use and {10} is only 10 we have to use if {3,6} means 3 to 6 characters we can use -->
+                <th>(10 Digit Allowed)</th>
+            </tr>
+            <tr>
+                <th><label for="">Gender</label></th>
+                <td>
+                    <input type="radio"> Male
+                    <input type="radio">Female
+                </td>
+            </tr>
+
+            <tr>
+                <th>Date Of Birth(DOB)</th>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <th><label for="">Address</label></th>
+                <td><textarea name="" id=""></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="">City</label></th>
+                <td><input type="text" maxlength="50">Banglore</td>
+                <td>(Max 50 Characters Allowed)</td>
+            </tr>
+            <tr>
+                <th><label for="">Pin code</label></th>
+                <td><input type="number" placeholder="560068" maxlength="6"></td>
+                <td>(Max 6 numbers allowed)</td>
+            </tr>
+            <tr>
+                <th><label for="">Pin code</label></th>
+                <td><input type="number" placeholder="560068" maxlength="6"></td>
+                <td>(Max 6 numbers allowed)</td>
+            </tr>
+            <tr>
+                <th><label for="">State</label></th>
+                <td><input type="text" placeholder="karnataka"></td>
+                <td>(Max 50 Characters Allowed)</td>
+            </tr>
+            <tr>
+                <th><label for="">Hobbies</label></th>
+                <th>
+                    <input type="checkbox">Drawing
+                    <input type="checkbox">Singing
+                    <input type="checkbox">Dancing
+                    <input type="checkbox">Sketching <br>
+                    <input type="checkbox">Others 
+                    <input type="text" placeholder="Ex-Teaching">
+                </th>
+                <th>(Max 50 Characters allowed)</th>
+            </tr>
+            <tr>
+                <th>Qualification</th>
+                <th>
+                    <input type="checkbox">High School(10th)
+                    <input type="checkbox">Higher School(12th)
+                    <input type="checkbox">Graduation(Bachelors)
+                    <input type="checkbox">Post Graduation(Masters)
+                    <input type="checkbox">Phd
+                </th>
+            </tr>
+
+            <tr>
+                <th><label for="">Courses Applied for</label></th>
+                <th>
+                    <input type="radio">BCA(Bachelor of Computer Application)<br>
+                    <input type="radio">B.com(Bachelor of commerce) <br>
+                    <input type="radio">B.Sc(Bachelor Of Science) <br>
+                    <input type="radio">BA(Bachelor of Arts) <br>
+                    <input type="radio">MCA(Master of Computer Application) <br>
+                    <input type="radio">M.com(Master of Commerce) <br>
+                    <input type="radio">M.Sc(Master of science) <br>
+                    <input type="radio">MA(Master of Arts) <br>
+                </th>
+            </tr>
+
+            <tr>
+                <td><input type="submit"></td>
+                <td> <input type="reset"></td>
+
+
+            </tr>
+
+        </table>
+    </form>
+    
+</body>
+</html>

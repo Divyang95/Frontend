@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Hover</title>
+    <style>
+        .nav{
+            display: flex;
+            list-style: none;
+            border: 2px solid;
+        }
+
+        .nav-list {
+            padding: 10px 30px;
+            background-color: aqua;
+            margin:10px;
+            position: relative;
+            border: 2px solid;
+
+
+        }
+
+        .list{
+            position: absolute;
+            background-color: aqua;
+            top: 100%;
+            left: 0;
+            list-style: none;
+            display: none;
+            width: 80%;
+        }
+
+        .nav-list:hover .list{
+            display: block;
+            /* background-color: aliceblue; */
+        }
+        
+        .li-list{
+            position: relative;
+            border: 2px solid;
+            padding: 0px 10px;
+            
+            /* margin: 5px; */
+            
+        }
+        .sublist{
+            position: absolute;
+            list-style: none;
+            background-color: lightgrey;
+            top: 0;
+            left: 100%;
+            /* padding: 0px 10px; */
+            display: none;
+            
+        }
+        .li-sublist{
+            border: 2px solid;
+            padding: 0 10px;
+
+        }
+        .li-list:hover .sublist{
+            display: block;
+            /* background-color: antiquewhite; */
+        }
+
+        .li-list:hover{
+            background-color: antiquewhite;
+        }
+
+        .li-sublist:hover{
+            background-color:lightblue;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li class="nav-list">Home
+            <ul class="list">
+                <li class="li-list">Home1
+                    <ul class="sublist">
+                        <li class="li-sublist">Maninagar</li>
+                        <li class="li-sublist">S.GHighway</li>
+                        <li class="li-sublist">C.G Road</li>
+                    </ul>
+                </li>
+                <li class="li-list">Home2
+                    <ul class="sublist">
+                        <li class="li-sublist">Chandkheda</li>
+                        <li class="li-sublist">Sindhubhavan</li>
+                        <li class="li-sublist">Gota</li>
+                    </ul>
+                </li>
+                <li class="li-list">Home3</li>
+                <li class="li-list">Home4</li>
+            </ul>
+        </li>
+        <li class="nav-list">About
+            <ul class="list">
+                <li class="li-list">About1</li>
+                <li class="li-list">About2</li>
+                <li class="li-list">About3</li>
+                <li class="li-list">About4</li>
+            </ul>
+        </li>
+        
+        <li class="nav-list">Contact
+            <ul class="list">
+                <li class="li-list">contact1</li>
+                <li class="li-list">contact2</li>
+                <li class="li-list">contact3</li>
+                <li class="li-list">contact4</li>
+            </ul>
+        </li>
+        <li class="nav-list">Help
+            <ul class="list">
+                <li class="li-list">Help1</li>
+                <li class="li-list">Help2</li>
+                <li class="li-list">Help3</li>
+                <li class="li-list">Help4</li>
+            </ul>
+        </li>
+    </ul>
+    
+</body>
+</html>

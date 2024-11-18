@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 500px;
+            width: 700px;
+            background-color: brown;
+            overflow: hidden;
+            
+        }
+        .innerdiv{
+            height: 600px;
+            width: 1000px;
+            background-color: aqua;
+            background-image: url("https://media.istockphoto.com/id/1735100420/photo/cozy-dressing-room-floor-hanger-with-womens-seasonal-autumn-winter-clothes-coats-pullovers.jpg?s=2048x2048&w=is&k=20&c=LldsJUF76DencrMEU5p4fzJOK6ywN0ZTXK8t8uU2dLY=");
+            background-repeat: no-repeat;
+            background-size: 80% 80%;
+            background-size: cover;
+            margin: auto;
+            transition: 0.5s;
+        }
+
+        .main:hover .innerdiv{
+            transform:translateX(10%)
+
+        }
+        .main:hover .borderdiv{
+            display: block;
+        }
+
+        .main:hover .borderdiv p{
+            transition: 0.5s;
+        }
+
+
+        .borderdiv{
+            height: 250px;
+            width: 500px;
+            border: 5px solid white;
+            color: white;
+            margin: 50px auto;
+            display: none;
+            transition: 0.5s;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="innerdiv">
+            <div class="borderdiv">
+                <p>N e w A r r i v a l s</p>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
