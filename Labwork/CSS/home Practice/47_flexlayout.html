@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex layout</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-around;
+            background-color: lightcoral;
+            align-items: center;
+        }
+
+        #sec1{
+            background-color: aqua;
+            display: flex;
+        }
+
+        /* width and height takes as per its parent div means relative to its parent div whatever boxes we want to make in each section 
+        as per number of boxes we needed we have to give width as per its parent div */
+
+        .box{
+            width: 25%;
+            
+            border: 2px solid;
+        }
+
+        #sec2{
+            background-color: brown;
+            display: flex;
+            
+        }
+
+        #box1{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #box2{
+            display: flex;
+        }
+
+        .top, .bottom{
+            border: 2px solid gold;
+            height: 50%;
+            width: 100%;
+        }
+
+        .left, .right{
+            border: 2px solid gold;
+            width: 50%;
+            width: 50%;
+        }
+
+        .box1{
+            width: 33.33%;
+            border: 2px solid blue;
+            height: 400px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">logo</div>
+        <ul>
+            list
+        </ul>
+        <div class="search">search</div>
+    </nav>
+
+    <section id="sec1">
+        <div class="box">1</div>
+        <div class="box" id="box1">
+            <div class="top">tops</div>
+            <div class="bottom">bottom</div>
+        </div>
+        <div class="box" id="box2">
+            <div class="left">2 left</div>
+            <div class="right">3 right</div>
+        </div>
+        <div class="box">4</div>
+    </section>
+
+    <section id="sec2">
+        <div class="box1">1</div>
+        <div class="box1">2</div>
+        <div class="box1">3</div>
+    </section>
+    
+</body>
+</html>

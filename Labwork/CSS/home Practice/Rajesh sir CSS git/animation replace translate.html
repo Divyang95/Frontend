@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>without animationt</title>
+    <style>
+        .outer{
+            position: relative;
+            height: 500px;
+            width: 100%;
+            /* transition: 5s; */
+        }
+
+        .inner{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            /* transition: 5s; */
+        }
+
+        .inner:hover{
+            top: 0;
+            left: 100px;
+            transition: 5s;
+            transform: rotateZ(180deg);
+            /* transform: rotateX('360deg'); */
+            background-color: yellow;
+    
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+    
+</body>
+</html>

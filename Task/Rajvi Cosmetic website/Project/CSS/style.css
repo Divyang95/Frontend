@@ -1,0 +1,684 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+}
+
+/* Column Container */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* for mobile phones */
+[class*="col-"]{
+    width: 100%;
+
+}
+
+/* for tablets */
+@media only screen and (min-width:600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+}
+
+/* for desktops */
+@media only screen and (min-width:768px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/* row1 style */
+.row1{
+    background-color: #FEF1EF;
+    padding: 1%;
+
+}
+
+.row1icons{
+    margin-left: 70%;
+}
+
+.socialmediaicon{
+    margin: 0 5px;  
+    color: #F9A392;
+}
+
+.socialmediaicon:hover{
+    color: #e83e8c;
+}
+
+.contactdetails{
+    color: gray;
+}   
+
+
+/* style row2 header */
+.row2{
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    padding-left: 4%;
+
+}
+
+.row2 h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.row2 span{
+    color: #F9A392;
+}
+
+.row2links{
+    padding: 0 1%;
+    font-size: medium;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+
+}
+
+.row2button{
+    padding: 5% 15%;
+    color: white;
+    background-color: #F9A392;
+    border: #F9A392;
+    font-weight: 600;
+    font-size: 1.1em;
+
+}
+
+/* main style */
+.main{
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* background-image:url('/images/main_2_image.jpeg'); */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.5)),url('/Project/images/main_2_image.jpeg');
+    background-size: 100% 100%, 100% 100%;
+    text-align: center;   
+    z-index: 2;
+    height: 600px;
+    padding-top: 10%;
+}
+
+.main p{
+    margin: 2%;
+    color: white;
+}
+
+.main h1{
+    color: white;
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.main button{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1% 4%;
+    border: 2px solid white;
+    font-size: larger;
+    margin: 2%;
+}
+
+.main button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* .main::before{
+    content: " ";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+
+} */
+
+/* .maintext{
+    position: absolute;
+    height: 50%;
+    width:50%;
+    text-align: center;
+    line-height: 80px;
+    top: 25%;
+    left:25%;
+    color: white;
+
+} */
+
+/* .highlightedtext{
+    font-weight: 900;
+    font-size: 3em;
+} */
+
+/* .makeappointmentbtn{
+    padding: 2% 5%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid white;
+    font-weight: 600;
+    font-size: 1.1em;
+} */
+
+/* .makeappointmentbtn:hover{
+    background-color: white;
+    color: black;
+} */
+
+.appointmentlink{
+    text-decoration: none;
+    color: white;
+}
+
+.makeappointmentbtn:hover .appointmentlink{
+    color: black;
+}
+
+
+/* row4 style */
+.aboutuspic{
+    width: 70%;
+    padding-left: 25%;
+    padding-top: 25%;
+}
+
+.aboutustext{
+    padding-top: 30%;
+    padding-right: 25%;
+
+}
+
+.aboutustag{
+    color:#F9A392;
+    background-color: #FEF1EF;
+    display: inline-block;
+    padding: 2%;    
+    font-weight: 500;
+    margin: 3% 0;
+}
+
+.aboutustext h1{
+    font-weight: 800;
+    font-size: 2.2em;
+    margin-bottom: 4% ;
+}
+
+.aboutusdescription{
+    color:gray;
+    border-left: 2px solid #e83e8c;
+    padding-left:5%;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-break: auto;
+    line-height: 1.5;
+
+}
+
+.skinexperts{
+    text-align: center;
+    background-color: #FEF1EF;
+    margin: 15% 5%;
+    padding: 10% 15%;
+    
+}
+
+.happyclients{
+    text-align: center;
+    background-color:#FEF1EF;
+    margin: 15% 5%;
+    padding: 10% 15%;
+}
+
+.skinexperts h1{
+    color:#F9A392;
+}
+
+.happyclients h1{
+    color: #F9A392;
+}
+
+.skinexperts p{
+    font-size: small;
+}
+.happyclients p{
+    font-size: small;
+}
+
+.row5main{
+    /* background-color: green; */
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 1%;
+}
+
+.row5main p{
+    display: inline-block;
+    background-color: #FEF1EF;
+    color: #F9A392;
+    padding: 0.5%;
+    font-weight: 500;
+    margin-bottom: 1%;
+}
+.hairtreatmentrow{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5));
+    background-size: 100% 100%;
+}
+
+.hairtreatmentimg{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url('/Project/images/hairtreatment_image.jpg');
+    background-repeat: no-repeat;
+}
+
+.hairtreatmentrow img{
+    height: 100%;
+    width: 100%;
+}
+
+.hairtreatmenttext{
+    text-align: center;
+    padding-top: 10%;
+    z-index: 2;
+    color: white;
+}
+
+.hairtreatmenttext h1{
+    padding: 3%;
+}
+
+.hairtreatmenttext p{
+    padding: 3%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    transition: 1s;
+
+}
+
+.hairtreatmenttext p:hover{
+    background-color: white;
+    scale: 1.1;
+    color: black;
+}
+
+.hairtreatmentrow img{
+    padding-top: 30%;
+    padding-bottom: 20%;
+}
+
+.headingform{
+    text-align: center;
+    padding: 2%;
+    /* background-color: #F9A392; */
+}
+
+.headingform p{
+    margin: 1%;
+    color: #F9A392;
+    background-color: #FEF1EF;
+    display: inline-block;  
+    padding: 2%;
+}
+
+.makeappointmentbackground{
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)),url('/Project/images/form_2_background.jpg');
+    background-size: 100% 100%,100% 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.makeappointmentform{
+    background-color: rgba(0,0,0,0.6);
+
+}
+
+/* .makeappointmentform h1{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-weight: 900;
+
+}
+
+.makeappointmentform p{
+    color: white;
+}
+
+.makeappointmentform select{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2% 35%;
+}
+
+.makeappointmentform input{
+    padding: 2% 35%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border:2px solid gray;
+    color: white;
+
+}
+
+.makeappointmentform button{
+    background-color: #F9A392;
+    color: white;
+    font-weight: 700;
+    font-size: larger;
+    width: 85.5%;
+    padding: 1% 0;
+}
+
+.makeappointmentform input:focus{
+    outline: 1px solid #F9A392;
+}
+
+.makeappointmentform button:hover{
+    outline:1px solid #F9A392;
+    background-color:#fd7e14;
+} */
+.appointment_form{
+    align-items: center;
+    padding:10px 40px 10px 80px;
+}
+
+caption{
+    font-size: 40px;
+    color: white;
+}
+
+form{
+    color: rgb(199,185,185);
+    background-color: rgba(0,0,0,0.4);
+    padding: 30px 30px;
+    font-size: 1.5em;
+    height: 450px;
+    margin: 20px auto;
+}
+
+select{
+    height: 40px;
+}
+
+.date{
+    height: 40px;
+}
+
+.Appointmentbutton{
+    text-align: center;
+    background-color: #F9A392;
+    color: white;
+    height: 50px;
+}
+
+
+/* .hairtreatmenttextparent{
+    position: relative;
+    background-color: orangered;
+}
+
+.hairtreatmenttext{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    /* background-color: aliceblue; */
+    /* color: white; */
+    /* background-color: blue; */
+
+/* } */ 
+
+
+
+/* .hairtreatmenttext h1{
+    margin: 4%;
+}
+
+.hairtreatmenttext p{
+    margin: 2%;
+}
+
+.hairtreatmenttext span{
+    padding:3% 10%;
+    border: white 2px solid;
+    color: white;
+    transition: 1s;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+
+.hairtreatmenttext span:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.2);
+
+} */
+
+/* form style book appointment */
+/* .makeappointmentform{
+    position: relative;
+    background-image: url("/images/form_2_background.jpg");
+    background-size: 100% 100%;
+    height: auto;
+    width: 100%;
+    height: 700px;
+}
+
+.makeappointmentform::before{
+    content: " ";
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+}
+
+.formappointment{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    height:80%;
+}
+
+.formappointment select{
+    margin-left: 10%;
+    padding: 2% 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.formappointment label{
+    display: block;
+    margin:2%;
+    margin-left: 10%;
+}
+.formappointment input{
+    margin-left: 10%;
+    padding: 2% 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.formappointment button {
+    display: block;
+    margin-top: 5%;
+    margin-left: 10%;
+    padding: 2% 30%;
+    color: white;
+    background-color:#F9A392;
+} */
+
+.teamexperts{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.teamexperts p{
+    margin-top: 25%;
+    display: inline-block;
+    background-color:#FEF1EF;
+    color: #F9A392;
+    padding: 1% 2%;
+    margin-bottom: 1%;
+}   
+
+.teamexperts h1{
+    margin-bottom: 3%;
+}
+
+.teamexpertcards{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15%;
+}
+
+.expertcard{
+    position: relative;
+    margin: 0 20px;
+    /* background-color: green; */
+    overflow: hidden;
+}
+
+.ptag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: #F9A392;
+    color: #FEF1EF;
+    padding: 8%;
+    transition: 0.6s;
+    width: 100%;
+}
+
+.ptagparent{
+    overflow: hidden;
+    position: relative;
+    /* background-color: orangered; */
+    /* border: 5px solid yellowgreen; */
+    height: 80px;
+}
+
+.ptag span{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 1px;
+}
+
+.ptag1{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    text-align: center;
+    background-color: black;
+    color: #FEF1EF;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8%;
+    transition: 0.6s;
+
+
+}
+.icone{
+    border: 1px solid #F9A392;
+    padding: 5%;
+    color: #F9A392;
+}
+
+.icone:hover{
+    background-color: #F9A392;
+    color: black;
+}
+
+.expertimg{
+    height: 300px;
+    background-color: blue;
+}
+
+.expertcard:hover .ptag{
+    transform: translateY(80px);
+}
+
+.expertcard:hover .ptag1{
+    transform: translateY(80px);
+}
+/* .expertcard:hover{
+    
+} */
+
+/* testimonal row */
+.testimonalrow{
+    justify-content: center;
+}
+
+.testimonalimage{
+    padding: 80px 50px 80px 180px;
+}
+
+.testimonaltext{
+    padding-top:6%;
+}
+
+.testimonaltag{
+    color: #F9A392;
+    background-color: #FEF1EF;
+    display: inline-block;
+    padding: 2% 4%;
+    font-weight: 600;
+
+}
+
+.rroundimg img{
+    border-radius: 50%;
+}
+
+.quoteright{
+    color: #F9A392;
+    font-weight: 900;
+    font-size: 4em;
+    background-color: aqua;
+    padding-left: 30%;
+
+}
+
+.reviewtext{
+    background-color: aquamarine;
+}
+
+.rtext{
+    padding:30px;
+}
+
+.professiontext{
+    color: gray;
+    padding-top: 10%;
+}

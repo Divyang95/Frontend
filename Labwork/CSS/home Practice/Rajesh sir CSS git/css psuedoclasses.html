@@ -1,0 +1,116 @@
+<!-- A psuedo class used to define a special state of an element
+
+example, it can be used to:
+
+style an element when user mouses over it 
+style visited and unvisited links differently 
+style an element when it gets focus 
+
+selector:pseudo-class{
+    property:value;
+}
+
+a:hover{
+
+}
+
+selector            example             Example Description
+:active             a:active            selects the active link
+:checked            input:checked       selects every checked <input> elements
+:disabled           input:disabled      selects every disabled <input> elements
+:empty              p:empty             selects every <p> element that has no children
+:enabled            input:enabled       selects every enabled <input> element
+:first-child        p:first-child       selects every <p> elements that is the first child element of its parent
+:first-of-type      p:first-of-type     selects every <p> elements that is the first <p> element of its parent
+:focus              input:focus         select the <INPUT>element that has focus
+:hover              a:hover             selects links on mouse over 
+:in-range           input:in-range      selects <input> elements with a value within a specified range 
+:invalid            input:invalid       selects all <input> elements with an invalid value
+:lang(language)     p:lang(it)          selects every <p> elements with a lang attribute value starting with 'it'       
+:last-child         p:last-child        selects every <p> elements that is the last child of its parent 
+:last-of-type       p:last-of-type      selects every <p> element that is the last <p> element of its parent 
+:link               a:link              selects all unvisited links 
+:not(selector)      :not(p)             selects every element that is not a <p> element 
+:nth-child(n)       p:nth-child(2)      selects every <p> element that is second child of its parent 
+:nth-last-child(n)  p:nth-last-child(2) selects every <p> element that is second child of ots parent, counting from the last child
+:nth-last-of-type(n)p:nth-of-type(2)    selects every <p> element that is second <p> element of its parent, counting from last child 
+:nth-of-type(n)     p:nth-of-type(2)    selects every <p> element that is the second <p> element of its parent, 
+:only-of-type       p:only-of-type      selects every <p> element that is the only <p> element of its parent.
+:only-child         p:only-child        selects every <p> element that is the only child of its parent.
+:optional           input:optional      selects <input> elements with no 'required' attribute. 
+:out-of-range       input:out-of-range  selects <input> elements with a value outside a specified range.
+:read-only          input:read-only     selects <input> elements with a 'readonly' attribute.
+:read-write         input:read-write    selects <input> elements with no 'readonly' attribute.
+:required           input:required      selects <input> elements with a 'required' attribute specified 
+:root               root                selects the documents root element 
+:target             #news:traget        select current active #news element (clicked on a URL containing that anchor name)
+:valid              input:valid         selects all <input> elements with a valid value
+:visited            a:visited           selects all visited links      -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo class</title>
+    <style>
+        p:first-child {
+            background-color:yellow
+            /* selects every <p> element that is the first child of its parent */
+        }
+
+        li:first-child{
+            background-color: yellow;
+            /* selects every <li> elements that is the first child of its parent */
+            
+        }
+
+        /* unvisited links */
+        a:link {
+            color: red;
+        }
+
+        /* visited links */
+        a:visited{
+            color: green;
+        }
+
+        /* mouse over link */
+        a:hover{
+            color:hotpink
+        }
+
+        /* selected link */
+        a:active{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Hello How are you?</p>
+    <p>Hello How are you?</p>
+    <p>Hello How are you?</p>
+    <p>Hello How are you?</p>
+    <p>Hello How are you?</p>
+
+    <ol>
+        <li>Apple</li>
+        <li>Apple</li>
+        <li>Apple</li>
+        <li>Apple</li>
+    </ol>
+
+    <h2>CSS Links</h2>
+    <a href="#">This is a link</a>
+    <br>
+
+    Name: <input type="text">
+
+    <br>
+
+    <img src="a.jpg" alt="">
+    
+</body>
+</html>
